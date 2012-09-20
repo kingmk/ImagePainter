@@ -1,0 +1,449 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6AE3A26A160B4FEB00BD4A20 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AE3A269160B4FEB00BD4A20 /* UIKit.framework */; };
+		6AE3A26C160B4FEB00BD4A20 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AE3A26B160B4FEB00BD4A20 /* Foundation.framework */; };
+		6AE3A26E160B4FEB00BD4A20 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AE3A26D160B4FEB00BD4A20 /* CoreGraphics.framework */; };
+		6AE3A274160B4FEB00BD4A20 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6AE3A272160B4FEB00BD4A20 /* InfoPlist.strings */; };
+		6AE3A276160B4FEB00BD4A20 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AE3A275160B4FEB00BD4A20 /* main.m */; };
+		6AE3A27A160B4FEB00BD4A20 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AE3A279160B4FEB00BD4A20 /* AppDelegate.m */; };
+		6AE3A27D160B4FEB00BD4A20 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AE3A27B160B4FEB00BD4A20 /* MainStoryboard.storyboard */; };
+		6AE3A280160B4FEB00BD4A20 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AE3A27F160B4FEB00BD4A20 /* ViewController.m */; };
+		6AE3A288160B4FEB00BD4A20 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AE3A287160B4FEB00BD4A20 /* SenTestingKit.framework */; };
+		6AE3A289160B4FEB00BD4A20 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AE3A269160B4FEB00BD4A20 /* UIKit.framework */; };
+		6AE3A28A160B4FEB00BD4A20 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AE3A26B160B4FEB00BD4A20 /* Foundation.framework */; };
+		6AE3A292160B4FEB00BD4A20 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6AE3A290160B4FEB00BD4A20 /* InfoPlist.strings */; };
+		6AE3A295160B4FEB00BD4A20 /* ImagePainterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AE3A294160B4FEB00BD4A20 /* ImagePainterTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6AE3A28B160B4FEB00BD4A20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6AE3A25C160B4FEB00BD4A20 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6AE3A264160B4FEB00BD4A20;
+			remoteInfo = ImagePainter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6AE3A265160B4FEB00BD4A20 /* ImagePainter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImagePainter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AE3A269160B4FEB00BD4A20 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6AE3A26B160B4FEB00BD4A20 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6AE3A26D160B4FEB00BD4A20 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6AE3A271160B4FEB00BD4A20 /* ImagePainter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ImagePainter-Info.plist"; sourceTree = "<group>"; };
+		6AE3A273160B4FEB00BD4A20 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6AE3A275160B4FEB00BD4A20 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6AE3A277160B4FEB00BD4A20 /* ImagePainter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ImagePainter-Prefix.pch"; sourceTree = "<group>"; };
+		6AE3A278160B4FEB00BD4A20 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6AE3A279160B4FEB00BD4A20 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6AE3A27C160B4FEB00BD4A20 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		6AE3A27E160B4FEB00BD4A20 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6AE3A27F160B4FEB00BD4A20 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6AE3A286160B4FEB00BD4A20 /* ImagePainterTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImagePainterTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AE3A287160B4FEB00BD4A20 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		6AE3A28F160B4FEB00BD4A20 /* ImagePainterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ImagePainterTests-Info.plist"; sourceTree = "<group>"; };
+		6AE3A291160B4FEB00BD4A20 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6AE3A293160B4FEB00BD4A20 /* ImagePainterTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImagePainterTests.h; sourceTree = "<group>"; };
+		6AE3A294160B4FEB00BD4A20 /* ImagePainterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImagePainterTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6AE3A262160B4FEB00BD4A20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AE3A26A160B4FEB00BD4A20 /* UIKit.framework in Frameworks */,
+				6AE3A26C160B4FEB00BD4A20 /* Foundation.framework in Frameworks */,
+				6AE3A26E160B4FEB00BD4A20 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AE3A282160B4FEB00BD4A20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AE3A288160B4FEB00BD4A20 /* SenTestingKit.framework in Frameworks */,
+				6AE3A289160B4FEB00BD4A20 /* UIKit.framework in Frameworks */,
+				6AE3A28A160B4FEB00BD4A20 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6AE3A25A160B4FEB00BD4A20 = {
+			isa = PBXGroup;
+			children = (
+				6AE3A26F160B4FEB00BD4A20 /* ImagePainter */,
+				6AE3A28D160B4FEB00BD4A20 /* ImagePainterTests */,
+				6AE3A268160B4FEB00BD4A20 /* Frameworks */,
+				6AE3A266160B4FEB00BD4A20 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6AE3A266160B4FEB00BD4A20 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6AE3A265160B4FEB00BD4A20 /* ImagePainter.app */,
+				6AE3A286160B4FEB00BD4A20 /* ImagePainterTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6AE3A268160B4FEB00BD4A20 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6AE3A269160B4FEB00BD4A20 /* UIKit.framework */,
+				6AE3A26B160B4FEB00BD4A20 /* Foundation.framework */,
+				6AE3A26D160B4FEB00BD4A20 /* CoreGraphics.framework */,
+				6AE3A287160B4FEB00BD4A20 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6AE3A26F160B4FEB00BD4A20 /* ImagePainter */ = {
+			isa = PBXGroup;
+			children = (
+				6AE3A278160B4FEB00BD4A20 /* AppDelegate.h */,
+				6AE3A279160B4FEB00BD4A20 /* AppDelegate.m */,
+				6AE3A27B160B4FEB00BD4A20 /* MainStoryboard.storyboard */,
+				6AE3A27E160B4FEB00BD4A20 /* ViewController.h */,
+				6AE3A27F160B4FEB00BD4A20 /* ViewController.m */,
+				6AE3A270160B4FEB00BD4A20 /* Supporting Files */,
+			);
+			path = ImagePainter;
+			sourceTree = "<group>";
+		};
+		6AE3A270160B4FEB00BD4A20 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6AE3A271160B4FEB00BD4A20 /* ImagePainter-Info.plist */,
+				6AE3A272160B4FEB00BD4A20 /* InfoPlist.strings */,
+				6AE3A275160B4FEB00BD4A20 /* main.m */,
+				6AE3A277160B4FEB00BD4A20 /* ImagePainter-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6AE3A28D160B4FEB00BD4A20 /* ImagePainterTests */ = {
+			isa = PBXGroup;
+			children = (
+				6AE3A293160B4FEB00BD4A20 /* ImagePainterTests.h */,
+				6AE3A294160B4FEB00BD4A20 /* ImagePainterTests.m */,
+				6AE3A28E160B4FEB00BD4A20 /* Supporting Files */,
+			);
+			path = ImagePainterTests;
+			sourceTree = "<group>";
+		};
+		6AE3A28E160B4FEB00BD4A20 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6AE3A28F160B4FEB00BD4A20 /* ImagePainterTests-Info.plist */,
+				6AE3A290160B4FEB00BD4A20 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6AE3A264160B4FEB00BD4A20 /* ImagePainter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6AE3A298160B4FEB00BD4A20 /* Build configuration list for PBXNativeTarget "ImagePainter" */;
+			buildPhases = (
+				6AE3A261160B4FEB00BD4A20 /* Sources */,
+				6AE3A262160B4FEB00BD4A20 /* Frameworks */,
+				6AE3A263160B4FEB00BD4A20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ImagePainter;
+			productName = ImagePainter;
+			productReference = 6AE3A265160B4FEB00BD4A20 /* ImagePainter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6AE3A285160B4FEB00BD4A20 /* ImagePainterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6AE3A29B160B4FEB00BD4A20 /* Build configuration list for PBXNativeTarget "ImagePainterTests" */;
+			buildPhases = (
+				6AE3A281160B4FEB00BD4A20 /* Sources */,
+				6AE3A282160B4FEB00BD4A20 /* Frameworks */,
+				6AE3A283160B4FEB00BD4A20 /* Resources */,
+				6AE3A284160B4FEB00BD4A20 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6AE3A28C160B4FEB00BD4A20 /* PBXTargetDependency */,
+			);
+			name = ImagePainterTests;
+			productName = ImagePainterTests;
+			productReference = 6AE3A286160B4FEB00BD4A20 /* ImagePainterTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6AE3A25C160B4FEB00BD4A20 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = yuxinjin;
+			};
+			buildConfigurationList = 6AE3A25F160B4FEB00BD4A20 /* Build configuration list for PBXProject "ImagePainter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6AE3A25A160B4FEB00BD4A20;
+			productRefGroup = 6AE3A266160B4FEB00BD4A20 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6AE3A264160B4FEB00BD4A20 /* ImagePainter */,
+				6AE3A285160B4FEB00BD4A20 /* ImagePainterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6AE3A263160B4FEB00BD4A20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AE3A274160B4FEB00BD4A20 /* InfoPlist.strings in Resources */,
+				6AE3A27D160B4FEB00BD4A20 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AE3A283160B4FEB00BD4A20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AE3A292160B4FEB00BD4A20 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6AE3A284160B4FEB00BD4A20 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6AE3A261160B4FEB00BD4A20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AE3A276160B4FEB00BD4A20 /* main.m in Sources */,
+				6AE3A27A160B4FEB00BD4A20 /* AppDelegate.m in Sources */,
+				6AE3A280160B4FEB00BD4A20 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AE3A281160B4FEB00BD4A20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AE3A295160B4FEB00BD4A20 /* ImagePainterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6AE3A28C160B4FEB00BD4A20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6AE3A264160B4FEB00BD4A20 /* ImagePainter */;
+			targetProxy = 6AE3A28B160B4FEB00BD4A20 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6AE3A272160B4FEB00BD4A20 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6AE3A273160B4FEB00BD4A20 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6AE3A27B160B4FEB00BD4A20 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6AE3A27C160B4FEB00BD4A20 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		6AE3A290160B4FEB00BD4A20 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6AE3A291160B4FEB00BD4A20 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6AE3A296160B4FEB00BD4A20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6AE3A297160B4FEB00BD4A20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6AE3A299160B4FEB00BD4A20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ImagePainter/ImagePainter-Prefix.pch";
+				INFOPLIST_FILE = "ImagePainter/ImagePainter-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6AE3A29A160B4FEB00BD4A20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ImagePainter/ImagePainter-Prefix.pch";
+				INFOPLIST_FILE = "ImagePainter/ImagePainter-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		6AE3A29C160B4FEB00BD4A20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ImagePainter.app/ImagePainter";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ImagePainter/ImagePainter-Prefix.pch";
+				INFOPLIST_FILE = "ImagePainterTests/ImagePainterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		6AE3A29D160B4FEB00BD4A20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ImagePainter.app/ImagePainter";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ImagePainter/ImagePainter-Prefix.pch";
+				INFOPLIST_FILE = "ImagePainterTests/ImagePainterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6AE3A25F160B4FEB00BD4A20 /* Build configuration list for PBXProject "ImagePainter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AE3A296160B4FEB00BD4A20 /* Debug */,
+				6AE3A297160B4FEB00BD4A20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6AE3A298160B4FEB00BD4A20 /* Build configuration list for PBXNativeTarget "ImagePainter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AE3A299160B4FEB00BD4A20 /* Debug */,
+				6AE3A29A160B4FEB00BD4A20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6AE3A29B160B4FEB00BD4A20 /* Build configuration list for PBXNativeTarget "ImagePainterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AE3A29C160B4FEB00BD4A20 /* Debug */,
+				6AE3A29D160B4FEB00BD4A20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6AE3A25C160B4FEB00BD4A20 /* Project object */;
+}
