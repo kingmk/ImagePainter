@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[UIImageProcView addRect:]:UIImageProcView.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[ImageLayerDelegate drawLayer:inContext:]:UIImageProcView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "layer.contents">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[CIPPaintLayer paintImage:fromRect:scale:]:CIPPaintLayer.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[CIPViewController openSaveAlert]:CIPViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "NSUIntegerMax">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[UIImageProcView currentLayer]:UIImageProcView.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[UIImageProcView addRect:inNewLayer:]:UIImageProcView.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[CIPTextLayer display]:CIPTextLayer.m">
+      </ContextState>
+      <ContextState
+         contextName = "+[CIPImageProcess getImageBoundsFor:]:CIPImageProcess.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "bitsPerPixel/bitsPerComponent">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[CIPImageView touchesBegan:withEvent:]:CIPImageView.m">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

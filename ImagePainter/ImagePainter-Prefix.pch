@@ -11,4 +11,43 @@
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
+    #import <QuartzCore/QuartzCore.h>
+    #import <OpenGLES/EAGL.h>
+    #import <AssetsLibrary/AssetsLibrary.h>
+    #import <MobileCoreServices/MobileCoreServices.h>
+    #import "AppDelegate.h"
+
+    #import "GPUImage.h"
+    #import "CIPCommons.h"
+    #import "CIPUtilities.h"
+    #import "CIPImageProcess.h"
+    #import "CIPBrushUtilities.h"
+    #import "CIPPalette.h"
+    #import "CIPAppPreference.h"
+    #import "CIPFileUtilities.h"
+    #import "CIPCustomViewUtils.h"
+    #import "CIPFilter.h"
+    #import "CIPZoomView.h"
+
+    #import "CIPPhotoLayer.h"
+    #import "CIPPaintLayer.h"
+    #import "CIPTextLayer.h"
+    #import "CIPVirtualLayer.h"
+    #import "CIPHistoryManager.h"
+
+    #import "CIPPalettePanel.h"
+    #import "CIPDrawMenu.h"
+    #import "CIPLayerBar.h"
+    #import "CIPDrawSimple.h"
+    #import "CIPCollageControl.h"
+    #import "CIPCropControl.h"
+
+    #import "CIPLayerOper.h"
+    #import "CIPTextControl.h"
+    #import "CIPThumbView.h"
+    #import "CIPImageView.h"
+    #import "CIPGalleryController.h"
+    #import "CIPColorPickController.h"
+    #import "CIPFilterController.h"
+    #import "CIPCanvasController.h"
 #endif
