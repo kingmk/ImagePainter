@@ -39,6 +39,7 @@
 + (CGImageRef) generateImageWithMask:(UIImage*)mask withColor:(UIColor*)color;
 
 + (UIImage*) generateImageWithColor:(UIColor*)color onMask:(UIImage*)maskImage;
++ (UIImage*) drawImage:(UIImage *)originImage onOpaqueAreaIn:(UIImage *)maskImage scale:(CGFloat)scale;
 
 + (UIImage*) test:(UIImage*)cgImage;
 

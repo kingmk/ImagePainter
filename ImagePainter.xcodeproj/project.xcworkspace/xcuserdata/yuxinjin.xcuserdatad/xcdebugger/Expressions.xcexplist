@@ -3,7 +3,7 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "-[UIImageProcView addRect:]:UIImageProcView.m">
+         contextName = "-[CIPImageView touchesBegan:withEvent:]:CIPImageView.m">
       </ContextState>
       <ContextState
          contextName = "-[ImageLayerDelegate drawLayer:inContext:]:UIImageProcView.m">
@@ -25,6 +25,17 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "+[CIPImageProcess drawImage:onOpaqueAreaIn:scale:]:CIPImageProcess.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "originImage.size">
+            </PersistentString>
+            <PersistentString
+               value = "maskImage.size">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "-[UIImageProcView currentLayer]:UIImageProcView.m">
       </ContextState>
       <ContextState
@@ -42,7 +53,7 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "-[CIPImageView touchesBegan:withEvent:]:CIPImageView.m">
+         contextName = "-[UIImageProcView addRect:]:UIImageProcView.m">
       </ContextState>
    </ContextStates>
 </VariablesViewState>

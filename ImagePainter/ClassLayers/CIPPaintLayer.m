@@ -123,7 +123,7 @@ NSString *const LAYER_CONTENT_TEXT = @"text";
     unsigned char *colors = [CIPImageProcess getAverageColorFromImage:self.backImage.CGImage around:point withN:4];
     BOOL result = NO;
     if (colors) {
-        NSLog(@"select color: %d, %d, %d, %d", colors[0], colors[1], colors[2], colors[3]);
+        //NSLog(@"select color: %d, %d, %d, %d", colors[0], colors[1], colors[2], colors[3]);
         result = (colors[3] >= 1);
         free(colors);
     }

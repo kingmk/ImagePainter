@@ -76,7 +76,7 @@ CGFloat const TEXT_MAX_DIAMETER = 480;
     UIGraphicsEndImageContext();
     self.backImage = [CIPImageProcess cropImage:self.backImage within:CGRectMake(0, 0, actSize.width, actSize.height)];
     self.textRect = CGRectMake(self.textRect.origin.x, self.textRect.origin.y, actSize.width, actSize.height);
-    [CIPUtilities printRect:self.textRect withDescription:@"after painting, the textRect "];
+    //[CIPUtilities printRect:self.textRect withDescription:@"after painting, the textRect "];
 
     if (self.angle != 0) {
         self.backImage = [CIPImageProcess rotateImage:self.backImage withAngle:self.angle];

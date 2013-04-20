@@ -456,7 +456,7 @@ static const CGSize imageInnerBounds = {640, 640};
 #pragma mark Filter Function
 
 - (void) callFilter {
-    UIImage *image = [UIImage imageWithCGImage:(CGImageRef)[self.imageView currentLayer].contents];
+    UIImage *image = [UIImage imageWithCGImage:(CGImageRef)[self.imageView currentLayer].contents scale:[[UIScreen mainScreen] scale] orientation:UIImageOrientationUp];
     if (!image || image.size.width==0 || image.size.height==0) {
         self.filterAfterAddPhoto = YES;
         [self callImagePicker];

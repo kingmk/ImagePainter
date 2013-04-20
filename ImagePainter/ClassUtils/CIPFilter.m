@@ -179,8 +179,9 @@ static NSArray *filterSupports;
     [sepiaFilter addTarget:vignetteFilter];
     
     [gpuImage processImage];
+    UIImage *rltImage = [vignetteFilter imageFromCurrentlyProcessedOutput];
     
-    return [vignetteFilter imageFromCurrentlyProcessedOutput];
+    return [CIPImageProcess drawImage:rltImage onOpaqueAreaIn:image scale:image.scale];
 }
 
 + (UIImage*) filterExpose:(UIImage*)image {
@@ -196,8 +197,9 @@ static NSArray *filterSupports;
     [exposeFilter addTarget:vignetteFilter];
     
     [gpuImage processImage];
+    UIImage *rltImage = [vignetteFilter imageFromCurrentlyProcessedOutput];
     
-    return [vignetteFilter imageFromCurrentlyProcessedOutput];
+    return [CIPImageProcess drawImage:rltImage onOpaqueAreaIn:image scale:image.scale];
 }
 
 + (UIImage*) filterVibrance:(UIImage*)image {
@@ -207,8 +209,8 @@ static NSArray *filterSupports;
     [gpuImage addTarget:satFilter];
     
     [gpuImage processImage];
-    
-    return [satFilter imageFromCurrentlyProcessedOutput];
+    UIImage *rltImage = [satFilter imageFromCurrentlyProcessedOutput];
+    return [UIImage imageWithCGImage:rltImage.CGImage scale:image.scale orientation:UIImageOrientationUp];
 }
 
 + (UIImage*) filterComic:(UIImage*)image {
@@ -219,7 +221,8 @@ static NSArray *filterSupports;
     [gpuImage addTarget:toonFilter];
     [gpuImage processImage];
     
-    return [toonFilter imageFromCurrentlyProcessedOutput];
+    UIImage *rltImage = [toonFilter imageFromCurrentlyProcessedOutput];
+    return [UIImage imageWithCGImage:rltImage.CGImage scale:image.scale orientation:UIImageOrientationUp];
 }
 
 + (UIImage*) filterOcean:(UIImage*)image {
@@ -228,7 +231,8 @@ static NSArray *filterSupports;
     [gpuImage addTarget:amatorkaFilter];
     [gpuImage processImage];
     
-    return [amatorkaFilter imageFromCurrentlyProcessedOutput];
+    UIImage *rltImage = [amatorkaFilter imageFromCurrentlyProcessedOutput];
+    return [UIImage imageWithCGImage:rltImage.CGImage scale:image.scale orientation:UIImageOrientationUp];
 }
 
 + (UIImage*) filterLake:(UIImage*)image {
@@ -237,7 +241,8 @@ static NSArray *filterSupports;
     [gpuImage addTarget:amatorkaFilter];
     [gpuImage processImage];
     
-    return [amatorkaFilter imageFromCurrentlyProcessedOutput];
+    UIImage *rltImage = [amatorkaFilter imageFromCurrentlyProcessedOutput];
+    return [UIImage imageWithCGImage:rltImage.CGImage scale:image.scale orientation:UIImageOrientationUp];
 }
 
 + (UIImage*) filterEmboss:(UIImage*)image {
@@ -246,7 +251,8 @@ static NSArray *filterSupports;
     [gpuImage addTarget:embossFilter];
     [gpuImage processImage];
     
-    return [embossFilter imageFromCurrentlyProcessedOutput];
+    UIImage *rltImage = [embossFilter imageFromCurrentlyProcessedOutput];
+    return [UIImage imageWithCGImage:rltImage.CGImage scale:image.scale orientation:UIImageOrientationUp];
 }
 
 
@@ -256,7 +262,9 @@ static NSArray *filterSupports;
     [gpuImage addTarget:oilPaintFilter];
     [gpuImage processImage];
     
-    return [oilPaintFilter imageFromCurrentlyProcessedOutput];
+    UIImage *rltImage = [oilPaintFilter imageFromCurrentlyProcessedOutput];
+    
+    return [CIPImageProcess drawImage:rltImage onOpaqueAreaIn:image scale:image.scale];
 }
 
 + (UIImage*) filterGrayish:(UIImage *)image {
@@ -264,18 +272,13 @@ static NSArray *filterSupports;
     GPUImageGrayscaleFilter *grayFilter = [[GPUImageGrayscaleFilter alloc] init];
     [gpuImage addTarget:grayFilter];
     
-    GPUImageVignetteFilter *vignetteFilter = [[GPUImageVignetteFilter alloc] init];
-    vignetteFilter.vignetteStart = 0.2;
-    vignetteFilter.vignetteEnd = 0.9;
-    vignetteFilter.vignetteColor = (GPUVector3) {0.2f, 0.2f, 0.2f};
-    [grayFilter addTarget:vignetteFilter];
-    
     [gpuImage processImage];    
-    return [vignetteFilter imageFromCurrentlyProcessedOutput];
+    UIImage *rltImage = [grayFilter imageFromCurrentlyProcessedOutput];
+    return [UIImage imageWithCGImage:rltImage.CGImage scale:image.scale orientation:UIImageOrientationUp];
 }
 
 + (UIImage*) filterOldFilm:(UIImage *)image {
-    CGImageRef specks = [self generateRandomWhiteSpecksIn:image.size];
+    CGImageRef specks = [self generateRandomWhiteSpecksIn:CGSizeApplyAffineTransform(image.size, CGAffineTransformMakeScale(image.scale, image.scale))];
     GPUImagePicture *speckImage = [[GPUImagePicture alloc] initWithCGImage:specks];
     GPUImageOverlayBlendFilter *blendFilter = [[GPUImageOverlayBlendFilter alloc] init];
     [speckImage addTarget:blendFilter];
@@ -290,7 +293,7 @@ static NSArray *filterSupports;
     UIImage *rltImage = [blendFilter imageFromCurrentlyProcessedOutput];
     
     CGImageRelease(specks);
-    return rltImage;
+    return [CIPImageProcess drawImage:rltImage onOpaqueAreaIn:image scale:image.scale];
 }
 
 + (UIImage*)test:(UIImage*) image {
@@ -299,7 +302,8 @@ static NSArray *filterSupports;
     [gpuImage addTarget:oilPaintFilter];
     [gpuImage processImage];
     
-    return [oilPaintFilter imageFromCurrentlyProcessedOutput];
+    UIImage *rltImage = [oilPaintFilter imageFromCurrentlyProcessedOutput];
+    return [UIImage imageWithCGImage:rltImage.CGImage scale:image.scale orientation:UIImageOrientationUp];
 }
 
 + (UIImage*)test2:(UIImage*) image {

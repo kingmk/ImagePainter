@@ -18,7 +18,6 @@
     
     CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
     unsigned char *data = malloc(w*h*4);
-    
     CGContextRef context = CGBitmapContextCreate(data, w, h, bitsPerComponent, bytesPerRow, colorSpace, kCGImageAlphaPremultipliedLast);
     CGContextDrawImage(context, CGRectMake(0, 0, w, h), cgImage);
     
@@ -436,6 +435,47 @@
     CGImageRelease(rltCGImage);
     return rltImg;
 }
+
++ (UIImage*) drawImage:(UIImage *)originImage onOpaqueAreaIn:(UIImage *)maskImage scale:(CGFloat)scale {
+    if (originImage.size.width*originImage.scale != maskImage.size.width*maskImage.scale || originImage.size.height*originImage.scale != maskImage.size.height*maskImage.scale) {
+        return originImage;
+    }
+    int w = originImage.size.width*originImage.scale;
+    int h = originImage.size.height*originImage.scale;
+    unsigned char* originData = [CIPImageProcess getBitmapDataFrom:originImage.CGImage];
+    unsigned char *maskData = [CIPImageProcess getBitmapDataFrom:maskImage.CGImage];
+    unsigned char*resultData = malloc(sizeof(unsigned char)*w*h*4);
+    
+    int idx=0;
+    for (int y=0; y<h; y++) {
+        for (int x=0; x<w; x++) {
+            int alpha = (int)maskData[idx+3];
+            if (alpha >= 10) {
+                resultData[idx] = originData[idx];
+                resultData[idx+1] = originData[idx+1];
+                resultData[idx+2] = originData[idx+2];
+                resultData[idx+3] = originData[idx+3];
+            } else {
+                resultData[idx] = 0;
+                resultData[idx+1] = 0;
+                resultData[idx+2] = 0;
+                resultData[idx+3] = 0;
+            }
+            idx += 4;
+        }
+    }
+    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+    CGContextRef context = CGBitmapContextCreate(resultData, w, h, 8, w*4, colorSpace, kCGImageAlphaPremultipliedLast);
+    
+    CGImageRef rltImageRef = CGBitmapContextCreateImage(context);
+    CGColorSpaceRelease(colorSpace);
+    CGContextRelease(context);
+    
+    UIImage *rltImage = [UIImage imageWithCGImage:rltImageRef scale:scale orientation:UIImageOrientationUp];
+    CGImageRelease(rltImageRef);
+    return rltImage;
+}
+
 
 + (UIImage*) test:(UIImage*)image {
     int w = image.size.width;
